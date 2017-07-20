@@ -1,5 +1,6 @@
 package birch; 
 
+
 public class MountainBike extends Bicycle {
         
     // the MountainBike subclass adds one field
@@ -22,6 +23,8 @@ public class MountainBike extends Bicycle {
     // the MountainBike subclass adds one method
     public String toString() {
 	    String output = "";
+	    
+	    output += "XCadence: " + Integer.toString(super.cadence);
 
 	    output += "Height: " + Integer.toString(seatHeight);
 
@@ -29,4 +32,9 @@ public class MountainBike extends Bicycle {
 
 	    return output;
     }   
+    
+    public void throwNow()
+    {
+		throw new TrmException("Exception thrown by throwNow()");
+    }
 }

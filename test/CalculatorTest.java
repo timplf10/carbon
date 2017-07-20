@@ -1,4 +1,7 @@
 import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -13,4 +16,11 @@ public class CalculatorTest {
 		sum = calculator.evaluate("2+4+6+8");
 		assertEquals(20, sum);
 	}
+	
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void testIndexOutOfBoundsException() {
+	    ArrayList emptyList = new ArrayList();
+	    Object o = emptyList.get(0);
+	}
+
 }

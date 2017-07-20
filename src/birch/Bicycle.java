@@ -3,9 +3,9 @@ package birch;
 public class Bicycle {
         
     // the Bicycle class has three fields
-    public int cadence;
-    public int gear;
-    public int speed;
+	protected int cadence;
+    protected int gear;
+    protected int speed;
         
     // the Bicycle class has one constructor
     public Bicycle(int startCadence, int startSpeed, int startGear) {
@@ -32,8 +32,9 @@ public class Bicycle {
     }
 
     public String toString() {
-	    String output = "";
-
+	    
+    	String output = "";
+	    
 	    output += "Cadence: " + Integer.toString(cadence);
 	    output += " Gear: " + Integer.toString(gear);
 	    output += " Speed: " + Integer.toString(speed);
