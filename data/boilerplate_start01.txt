@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#TBL_S1 {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        width: 60%;
+	border-spacing: 0;  /* removes gaps at intersection of borders */
+    }
+
+#TBL_S1 td, #TBL_S1 th {
+        border: 1px solid #ddd; 
+        padding-top: 4px;
+        padding-bottom: 6px;
+	border: none;
+    }
+
+#TBL_S1 tr.SummaryL0 td {
+   	text-align: right;
+        font-weight: bold;
+        font-style: italic;
+	color: #4C0099;
+	border-top:1pt solid #4C0099;
+	border-bottom:1pt solid #4C0099;
+        padding-top: 9 px;
+        padding-bottom: 9 px;
+	background-color: #E3DFE6;
+    }
+
+#TBL_S1 tr.SummaryL1 td {
+   	text-align: right;
+        font-weight: bold;
+        font-style: italic;
+	color: #4C0099;
+	border-top:1pt solid #4C0099;
+        padding-top: 9 px;
+        padding-bottom: 9 px;
+    }
+
+#TBL_S1 .SummaryL2 td {
+   	text-align: right;
+        font-weight: bold;
+	color: #4C0099;
+	border-top:1pt solid #4C0099;
+        padding-top: 9 px;
+        padding-bottom: 9 px;
+    }
+
+#TBL_S1 .SummaryL3 td {
+   	text-align: right;
+        font-style: italic;
+	color: #4C0099;
+	border-top:1pt solid #4C0099;
+        padding-top: 9 px;
+        padding-bottom: 9 px;
+    }
+
+
+#TBL_S1 tr:hover {background-color: #ffd800;}
+
+#TBL_S1 th {
+        padding-top: 12px;
+        padding-bottom: 6px;
+        text-align: left;
+        background-color: white;
+        color: #4C0099;
+        outline: none;
+        border-collapse: collapse;
+        border: none;
+        border-bottom: 2px solid #4C0099;
+    }
+
+tr td:nth-child(4) {
+   text-align: right;
+}
+tr td:nth-child(5) {
+   text-align: right;
+
+</style>
+</head>
+<body>
+
+<table id="TBL_S1">
+    <colgroup>
+        <col span="1" style="width: 22%;">
+        <col span="1" style="width: 19%;">
+        <col span="1" style="width: 19%;">
+   	<col span="1" style="width: 15%;">
+        <col span="1" style="width: 25%;">
+    </colgroup>
+  <tr>
+    <th>Period</th>
+    <th>Region</th>
+    <th>Branch</th>
+    <th style="text-align: right">Sales</th>
+    <th style="text-align: right">Volume</th>
+  </tr>
+
