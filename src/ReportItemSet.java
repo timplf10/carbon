@@ -223,12 +223,12 @@ public class ReportItemSet {
 	
 	public void process() throws Exception {
 
-		openOutputFile("c:/code/birch/html", "reportXX.htm");
-		readPlainFile("c:/code/birch/data", "boilerplate_start01.txt");
-		readDataFile("c:/code/birch/data", "ris01.txt");
+		openOutputFile("/scrap/birch aaa/html", "reportXX.htm");
+		readPlainFile("/scrap/birch aaa/data", "boilerplate_start01.txt");
+		readDataFile("/scrap/birch aaa/data", "ris01.txt");
 		//System.out.println(this.toHTML());
 		writeOutputFile(this.toHTML());
-		readPlainFile("c:/code/birch/data", "boilerplate_end01.txt");
+		readPlainFile("/scrap/birch aaa/data", "boilerplate_end01.txt");
 		closeOutputFile();
 	}
 
